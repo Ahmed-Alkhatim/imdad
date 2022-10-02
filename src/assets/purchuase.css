@@ -1,0 +1,160 @@
+
+.orders {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.orders .headers {
+    color: #888;
+    font-weight: bold;
+}
+.dashboard-statistics .statistics {
+    margin-bottom: 50px;
+}
+.statistics {
+    display : flex;
+    flex-wrap: wrap;
+}
+.statistic {
+    width:180px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 10px;
+    padding: 5px;
+    box-shadow: 5px 3px 20px rgba(19, 45, 30, 0.3);
+    font-size: 13px;
+    color : #888;
+    display: flex;
+    align-items: center;
+}
+.activepurch {
+    border: solid 2px rgb(223, 130, 68);
+}
+.statistic > div{
+    display: inline-block;
+    
+}
+.statistic h6 {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+.statistic .icon {
+    background-color: #e79e51;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.purchuase .table {
+    margin-top: 50px;
+}
+.tables {
+    width: 100%;
+    overflow: hidden;
+}
+
+.purchuase .table .title {
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.purchuase .table .title::before{
+    content: "";
+    padding: 3px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+.purchuase .active-table::before{
+    background-color : rgb(40, 175, 0)
+}
+.purchuase .inactive-table::before{
+    background-color: #e79e51;
+}
+table {
+    width: 100%;
+    overflow: scroll;
+    font-size: 12px;
+    border-collapse: collapse;
+}
+table th {
+    font-weight: normal;
+}
+table  td {
+    font-weight: bold;
+}
+table  td, table th{
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width : 100px;
+    text-align: left;
+}
+.actions {
+}
+.marg {
+    margin-left: 30px;
+}
+.actions .link {
+    /* margin-bottom: 5px; */
+}
+
+.actions .btn {
+    margin-right: 5px;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(40, 175, 0);
+    border-radius: 6px;
+}
+.actions .btn img {
+    width: 14px;
+    height: 14px;
+}
+.actions .btn .half {
+
+}
+.first td{
+    padding-top: 20px;
+}
+.status {
+    padding: 3px 4px;
+    background-color: #e79e51;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    height: 25px;
+    line-height: 20px;
+    width: 80%;
+}
+.items {
+    margin-right: 5px;
+    display: inline-block;
+    padding: 5px 8px;
+    background-color: rgb(40, 175, 0);
+    border-radius: 6px;
+    color: #fff;
+}
+table {
+    overflow: scroll;
+}
+@media screen and (max-width : 1100px) {
+    .tables {
+        overflow: scroll;
+    }
+}
+@media screen and (max-width : 991px){
+    .statistic {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .orders .headers {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+}
